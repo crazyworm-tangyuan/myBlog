@@ -1,0 +1,307 @@
+@import 'fontello.less';
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+body{
+	position: relative;
+}
+
+#container {
+	width: 700px;
+	margin: auto;
+}
+
+.userPicture {
+    width: 100px;
+    height: 100px;
+    margin: 70px auto 0;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    padding: 4px;
+}
+
+.userName {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+    color: #335975;
+}
+
+.myIntroduce {
+    margin-top: 14px;
+    font-size: 14px;
+    text-align: center;
+    color: #5E656B;
+}
+
+.lineTag {
+    text-align: center;
+}
+
+.demo-icon {
+    text-decoration: none;
+    color: #4C5567;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 15px 5px;
+    content: '';
+}
+
+a.demo-icon.icon-github {
+    padding-right: 3px;
+}
+
+.topLine {
+    height: 3px;
+    width: 96%;
+    background-color: #3C414C;
+    margin: auto;
+}
+
+#user:after {
+	width: 50%;
+	height: 1px;
+	background-color: #f1f1f1;
+	margin: 30px auto 0;
+	display: block;
+	content: '';
+}
+
+a.oneArt {
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+}
+
+.oneArt h1 {
+    font-size: 16px;
+    color: #485763;
+    font-weight: 400;
+}
+
+.oneArt p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #969696;
+}
+
+.artList {
+    margin-top: 50px;
+}
+
+.oneArt span {
+	margin-left: 10px;
+	color: #777777;
+}
+
+.oneArt:hover {
+	background-color: #F6F7F7;
+} //上面的那个.oneArt 和 hover之间不要有任何空格，否则会出问题
+
+.artList:after {
+	width: 50%;
+	height: 1px;
+	margin: auto;
+	background-color: #f1f1f1;
+	margin-top: 30px;
+	display: block;
+	content: '';
+}
+
+.loadMore {
+    width: 128px;
+    height: 28px;
+    background-color: rebeccapurple;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rebeccapurple;
+}
+
+.loadMore:hover {
+	color: rebeccapurple;
+	background-color: white;
+	transition: 0.5s;
+}
+
+svg {
+    position: absolute;
+    top: 300px;
+    left: 40%;
+}
+
+.sedContainer {
+    width: 700px;
+    margin: auto;
+}
+
+.overHide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.containAll {
+    width: 200%;
+}
+
+.artListPart {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.specificContainer {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.specificContainer:before {
+    width: 96%;
+    height: 3px;
+    content: '';
+    background-color: #3C414C;
+    margin: auto; 
+    display: block;
+}
+
+.artSpecific {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.backHome {
+    margin-top: 10px;
+    color: #697177;
+    font-size: 14px;
+}
+
+h1.artTitle {
+    font-weight: 400;
+    color: #485763;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+time {
+    font-size: 12px;
+    color: #969896;
+    margin-top: 10px;
+    display: list-item;
+}
+
+mark {
+    background-color: #E67147;
+    font-size: 12px;
+    color: white;
+    border-radius: 3px;
+    padding: 1px 8px 2px;
+}
+
+.markBlock {
+    margin-top: 20px;
+}
+
+article.wholeArt {
+    margin: 40px 0;
+}
+
+.right {  
+    margin-left: -100%;
+    transition: 0.35s;
+}
+
+.transition {
+    transition-timing-function: cubic-bezier(.895,.030,.685,.22);
+}
+
+.backHome {
+    cursor: pointer;
+}
+
+.commenterPic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    display: inline-block;
+    float: left;
+}
+
+p.commenterName {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #656565;
+    font-weight: 600;
+}
+
+p.commentContent {
+    padding-top: 35px;
+    margin-left: 100px;
+    font-size: 14px;
+    color: #717171;
+}
+
+time.commentedTime {
+    float: left;
+    margin-top: 13px;
+    margin-left: 25px;
+}
+
+.comment li {
+    height: 80px;
+    margin-top: 20px;
+    background-color: #F1F5F5;
+    padding: 3px;
+}
+
+.viewComment {
+    width: 135px;
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #8DE8C1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+ul.comment {
+    display: none;
+    margin-top: 150px;
+}
+
+.hideCommentBtn {
+    display: none;
+}
+
+.viewComment:hover {
+    transition: 0.5s;
+    background-color: #E41C60;
+}
+
+.foot {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: #335975;
+    a {
+        color: #37444E;
+    }
+}
